@@ -12,7 +12,7 @@ export default class Home extends Component {
   render(){
     return(
       <Container>
-        <h1> Hi! Home </h1>
+        <h1>Whats up! </h1>
         <Image src={require('../assets/hero.jpg')} alt = "octodex-image" />
         <p> Hi Guys! This is HS. Just a random blah blah blah blah blah blah
             blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah

@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-hot-loader": "next",
     "react-router": "3.x",
     "styled-components": "^2.0.1"
   },

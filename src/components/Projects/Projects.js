@@ -1,13 +1,22 @@
 import React, {Component} from 'react';
 import Zoomy from 'react-zoomy';
 
+import {ImageButton} from './Projects.style';
+import {Container} from '../../theme/grid';
+
 class Projects extends Component{
   render(){
     return(
-      <div>
+      <Container>
       <Zoomy
           imageUrl={require('../../assets/hero.png')}
-          renderThumbnail={({ showImage }) => <button onClick={showImage}>Show Image</button>}
+          renderThumbnail={({ showImage }) =>
+           <ImageButton onClick={showImage}>
+               <img
+                  src={require('../../assets/hero_thumbnail.png')}
+               alt="Hero" />
+           </ImageButton>
+         }
           scale={[1.1, 1.1]}
           imageProps={{
           style: {
@@ -16,7 +25,7 @@ class Projects extends Component{
           }
           }}
           />
-      </div>
+      </Container>
     );
   }
 }

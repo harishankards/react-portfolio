@@ -16,7 +16,7 @@ export default class Home extends Component {
           <h2>React developer</h2>
         </HeroImage>
         {/*<Image src={require('../assets/hero.jpg')} alt = "octodex-image" />*/}
-        <RevealP hide>
+        <RevealP >
           Hi Guys! This is HS. Just a random blah blah blah blah blah blah
           blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
           blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah

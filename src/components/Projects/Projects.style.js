@@ -33,3 +33,7 @@ export const Index = styled.div`
 
     }
 `;
+
+export const ImageContainer = styled.div`
+    width: 800px;
+`;

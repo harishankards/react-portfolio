@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Zoomy from 'react-zoomy';
 
-import {ImageButton, Index, ImageContainer} from './Projects.style';
+import {ImageButton, Index, ImageContainer, Title} from './Projects.style';
 import {Container, Relative, Flex} from '../../theme/grid';
 import {A} from '../../theme/types';
 import ParallaxImage from 'react-image-parallax2';
@@ -10,7 +10,8 @@ class Projects extends Component{
   render(){
     return(
       <Container>
-        <Relative marginBottom="100px">
+        <Title>My closed source projects</Title>
+        <Relative marginTop="100px" marginBottom="50px">
           <Index>
               <h1>01</h1>
           </Index>
@@ -18,7 +19,7 @@ class Projects extends Component{
 
         </Relative>
 
-        <Flex justify={'center'}>
+        <Flex justify={'center'} marginBottom="5em">
           <Zoomy
               imageUrl={require('../../assets/hero.png')}
               renderThumbnail={({ showImage }) =>
@@ -37,7 +38,7 @@ class Projects extends Component{
               }}
               />
         </Flex>
-        <Relative marginBottom="100px">
+        <Relative marginBottom="50px">
           <Index>
               <h1>02</h1>
           </Index>
@@ -47,7 +48,7 @@ class Projects extends Component{
         <ImageContainer>
           <ParallaxImage
             reduceHeight={1/3}
-            src={require('../../assets/hero2.png')}/>    
+            src={require('../../assets/hero2.png')}/>
         </ImageContainer>
       </Container>
     );

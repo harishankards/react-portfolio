@@ -1,4 +1,5 @@
 import {injectGlobal} from 'styled-components';
+import  {black} from './variables';
 
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=VT323');
@@ -6,6 +7,7 @@ injectGlobal`
   body{
     font-family: 'VT323', monospace;
     font-size: 24px;
+    color: ${black};
   }
   h1, h2, h3{
     font-weight: normal;

@@ -5,6 +5,15 @@ export const Div = styled.div`
   ${({marginBottom}) => marginBottom && css`
     margin-bottom: ${marginBottom};
   `}
+  ${({marginTop}) => marginTop && css`
+    margin-top: ${marginTop};
+  `}
+  ${({marginLeft}) => marginLeft && css`
+    margin-left: ${marginLeft};
+  `}
+  ${({marginRight}) => marginRight && css`
+    margin-right: ${marginRight};
+  `}
 
 `;
 
@@ -24,7 +33,7 @@ export const Container = styled(Div)`
     padding-right: 10px;
     padding-top:15px;
   `}
-  
+
 `;
 
 export const Relative = styled(Div)`

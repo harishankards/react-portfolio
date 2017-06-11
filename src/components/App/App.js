@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Background} from './App.style';
+import NavigationBar from '../../component/NavigationBar/NavigationBar';
 
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
     return (
       <div>
         <Background />
+        <NavigationBar />
         {this.props.children}
       </div>
     );
